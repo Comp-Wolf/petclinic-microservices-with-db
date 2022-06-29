@@ -17,7 +17,7 @@ driver = webdriver.Chrome(options=chrome_options)
 # Connect to the application
 APP_IP = os.environ['MASTER_PUBLIC_IP']
 url = "http://"+APP_IP.strip()+":30001/"
-# url = "http://localhost:3001"
+# url = "http://localhost:8080"
 print(url)
 driver.get(url)
 sleep(3)
